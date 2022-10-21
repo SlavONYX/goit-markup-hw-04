@@ -110,6 +110,9 @@ svg {
 .contact-link .icon{
     margin-right: 10px;
     fill: currentColor;
+    box-sizing: border-box;
+    height: auto;
+
 }
 
 .contact-link:hover {
@@ -130,6 +133,9 @@ svg {
 
 .overlay {
     background-color: rgba(47, 48, 58, 0.4);
+    max-width: 1600px;
+    margin-left: 0;
+    margin-right: 0;
 }
 .banner-title{
     width: 696px;
@@ -180,6 +186,17 @@ button:focus {
     margin: 0 auto;
     display: block;
 }
+
+.banner-button:hover{
+    color: var(--main-text-color);
+    
+
+}
+
+.banner-button:focus{
+    color: var(--main-text-color)
+}
+
 
 .features{
     display: flex;
@@ -284,6 +301,7 @@ border-radius: 0px 0px 4px 4px;
     color: var(--other-text-color);
     margin: 0;
     padding: 0;
+    margin-bottom: 16px;
 }
 .footer{
     background-color: #2F303A;
@@ -397,6 +415,11 @@ border-radius: 0px 0px 4px 4px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.project-item:focus{
+    background: var(--background-main);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .project-item:not(:nth-last-child(-n+3)){
     margin-bottom: 30px;
 }
@@ -479,6 +502,12 @@ border-radius: 0px 0px 4px 4px;
     transform: translateY(3px);
 }
 
+.social-networks:focus {
+    background-color: var(--rare-color);
+    fill:var(--background-main);
+    transform: translateY(3px);
+}
+
 
 
 .social{
@@ -512,6 +541,11 @@ border-radius: 0px 0px 4px 4px;
     border:1px solid var(--rare-color);
 }
 
+.client-link:focus{
+    fill:var(--rare-color);
+    border:1px solid var(--rare-color);
+}
+
 .client{
     width: 106px;
     height: 60px;
@@ -527,6 +561,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .networks-title{
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 14px;
@@ -552,6 +587,14 @@ border-radius: 0px 0px 4px 4px;
     fill:var(--background-main);
     transform: translateY(3px);
 }
+
+.footer-social-networks:focus {
+    background-color: var(--rare-color);
+    fill:var(--background-main);
+    transform: translateY(3px);
+}
+
+
 
 .footer-social-links{
     display: flex;
