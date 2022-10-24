@@ -150,17 +150,17 @@ svg {
     margin-left: auto
 }
 
-button {
+.project-button {
     background-color: #dedede;
 }
 
-button:hover {
+.project-button:hover {
     background-color: var(--rare-color);
     color: var(--background-main);
     box-shadow: 4px 2px 2px rgba(0,0,0,0.25);
 }
 
-button:focus {
+.project-button:focus {
     outline: none;
     color: var(--background-main);
     box-shadow: 4px 2px 2px  rgba(0,0,0,0.25);
@@ -186,17 +186,16 @@ button:focus {
     border-radius: 4px;
     margin: 0 auto;
     display: block;
+    border-color: transparent;
 }
 
 .banner-button:hover{
-    color: var(--main-text-color);
     background-color:#188ce8;
     
 
 }
 
 .banner-button:focus{
-    color: var(--main-text-color);
     background-color:#188ce8;
 }
 
